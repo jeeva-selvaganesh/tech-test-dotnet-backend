@@ -99,13 +99,22 @@ document.
 
 Q1. What 'code smells' / anti-patterns did you find in the existing 
 	implementation of part 1 & 2?
+	Rest API naming, no interface segration, Tightly coupled with data service, repeating logic , 
+	no common implementation, No code organization 
 
 Q2. What best practices have you used while implementing your solution?
+	SOLID Principles, Rest Naming , .net core DI,Proper naming convention
 
 Q3. What further steps would you take to improve the solution given more time?
+	Write more tests, Add logger, custom rest exceptions , Write Validators, make apis async
+	Document apis, add comments
 
 Q4. What's a technology that you're excited about and where do you see this 
     being applicable? (Your answer does not have to be related to this problem)
+	.Net Core being able to deployed in linux environment and developed in macs this is some thing I would
+	said crazy if they asked 7 or 8 years back the way the MS flipped over in its technologies and tools being 
+	opensourced has excited me alot and also I feel javascript raise has been inevitable not just in mobile and browsers 
+	but on server side too. I also very much would like to debate over RPC vs REST I still if you got time.
 
 ## Request and Response Examples
 
@@ -116,14 +125,14 @@ Please see examples for how to make requests and the expected response below.
 The service is setup as a Web API and takes a request in the following format
 
 ~~~~ 
-GET /api/DespatchDate?ProductIds={product_id}&orderDate={order_date} 
+GET /api/Despatch/Date?ProductIds={product_id}&orderDate={order_date} 
 ~~~~
 
 e.g.
 
 ~~~~ 
-GET /api/DespatchDate?ProductIds=1&orderDate=2018-01-29T00:00:00
-GET /api/DespatchDate?ProductIds=2&ProductIds=3&orderDate=2018-01-29T00:00:00 
+GET /api/Despatch/Date?ProductIds=1&orderDate=2018-01-29T00:00:00
+GET /api/Despatch/Date?ProductIds=2&ProductIds=3&orderDate=2018-01-29T00:00:00 
 ~~~~
 
 ### Response
